@@ -2,10 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Wind, Droplets } from 'lucide-react';
+import { Wind, Droplets } from 'lucide-react';
 import Image from 'next/image';
 import bg from '../assets/images/bg.jpg';
-import clude from "../assets/images/clude.png";
 import robot from "../assets/images/robot.png";
 
 const Hero = () => {

@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { motion, AnimatePresence, px } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Sun, Moon, User, LogOut, Settings, ChevronDown } from 'lucide-react'
 import Image from 'next/image'
 import logo from '../assets/images/logo.png'
@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = '' }) => {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const [isSignedIn, setIsSignedIn] = useState(false)
   const [showProfileMenu, setShowProfileMenu] = useState(false)
-  const [userName, setUserName] = useState('John Doe')
+  const userName='John Doe'
 
   // Initialize dark mode from localStorage
   useEffect(() => {
